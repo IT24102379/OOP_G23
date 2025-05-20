@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - MovieMagnet</title>
+    <title>Contact Us - MovieMagnet</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
@@ -149,7 +149,7 @@
             text-align: center;
         }
 
-        .about-section {
+        .contact-section {
             background: rgba(26, 26, 26, 0.9);
             border-radius: 15px;
             padding: 40px;
@@ -157,7 +157,7 @@
             animation: fadeIn 1s ease;
         }
 
-        .about-section h1 {
+        .contact-section h1 {
             font-size: 48px;
             color: #ffeb3b;
             text-transform: uppercase;
@@ -165,84 +165,123 @@
             text-shadow: 2px 2px 10px rgba(255, 235, 59, 0.3);
         }
 
-        .about-section p {
-            font-size: 22px;
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.8;
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-
-        .highlight {
-            color: #ffeb3b;
-            font-weight: 700;
-        }
-
-        .mission-vision {
+        .contact-info {
             display: flex;
             justify-content: space-around;
-            margin-top: 40px;
             flex-wrap: wrap;
             gap: 20px;
+            margin-bottom: 40px;
         }
 
-        .mission, .vision {
+        .info-card {
             background: rgba(255, 235, 59, 0.1);
             padding: 20px;
             border-radius: 10px;
-            width: 45%;
-            min-width: 300px;
+            width: 30%;
+            min-width: 250px;
             text-align: left;
             transition: transform 0.3s ease;
         }
 
-        .mission:hover, .vision:hover {
+        .info-card:hover {
             transform: translateY(-5px);
         }
 
-        .mission h3, .vision h3 {
+        .info-card i {
             font-size: 28px;
             color: #ffeb3b;
             margin-bottom: 15px;
         }
 
-        .mission p, .vision p {
+        .info-card h3 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
             font-size: 18px;
             color: rgba(255, 255, 255, 0.8);
         }
 
-        .cta-button {
-            padding: 15px 30px;
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            font-size: 18px;
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
             background: linear-gradient(45deg, #ffeb3b, #ffd700);
             color: #1a1a1a;
-            text-decoration: none;
+            border: none;
             border-radius: 8px;
             font-size: 20px;
             font-weight: 600;
+            cursor: pointer;
             transition: all 0.3s ease;
-            margin-top: 30px;
-            display: inline-block;
         }
 
-        .cta-button:hover {
+        .submit-btn:hover {
             background: linear-gradient(45deg, #ffd700, #ffca28);
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(255, 235, 59, 0.6);
         }
 
-        .cta-button::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            transition: 0.5s;
+        .map-section {
+            margin-top: 40px;
+            text-align: center;
         }
 
-        .cta-button:hover::after {
-            left: 100%;
+        .map-section h2 {
+            font-size: 32px;
+            color: #ffeb3b;
+            margin-bottom: 20px;
+        }
+
+        .map-placeholder {
+            background: #333;
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
         }
 
         footer {
@@ -269,28 +308,33 @@
         }
 
         @media (max-width: 1024px) {
-            .about-section { padding: 30px; }
-            .about-section h1 { font-size: 40px; }
-            .about-section p { font-size: 20px; }
-            .mission h3, .vision h3 { font-size: 24px; }
-            .mission p, .vision p { font-size: 16px; }
-            .cta-button { font-size: 18px; padding: 12px 25px; }
+            .contact-section { padding: 30px; }
+            .contact-section h1 { font-size: 40px; }
+            .info-card { width: 45%; }
+            .form-group label { font-size: 18px; }
+            .map-section h2 { font-size: 28px; }
         }
 
         @media (max-width: 768px) {
-            .about-section { padding: 20px; }
-            .about-section h1 { font-size: 32px; }
-            .about-section p { font-size: 18px; }
-            .mission, .vision { width: 100%; }
-            .mission h3, .vision h3 { font-size: 22px; }
-            .cta-button { font-size: 16px; padding: 10px 20px; }
+            .contact-section { padding: 20px; }
+            .contact-section h1 { font-size: 32px; }
+            .info-card { width: 100%; }
+            .form-group label { font-size: 16px; }
+            .form-group input, .form-group textarea { font-size: 16px; }
+            .submit-btn { font-size: 18px; }
+            .map-section h2 { font-size: 24px; }
+            .map-placeholder { height: 250px; }
         }
 
         @media (max-width: 480px) {
-            .about-section h1 { font-size: 28px; }
-            .about-section p { font-size: 16px; }
-            .mission h3, .vision h3 { font-size: 20px; }
-            .cta-button { font-size: 14px; padding: 8px 15px; }
+            .contact-section h1 { font-size: 28px; }
+            .info-card h3 { font-size: 20px; }
+            .info-card p { font-size: 16px; }
+            .form-group label { font-size: 14px; }
+            .form-group input, .form-group textarea { font-size: 14px; }
+            .submit-btn { font-size: 16px; }
+            .map-section h2 { font-size: 20px; }
+            .map-placeholder { height: 200px; }
         }
     </style>
 </head>
@@ -301,10 +345,10 @@
     </div>
     <nav>
         <ul>
-            <li><a href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
+            <li><a href="${pageContext.request.contextPath}/webapp/index.jsp">Home</a></li>
             <li><a href="${pageContext.request.contextPath}/publicMovieList">Movies</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="${pageContext.request.contextPath}/about-us.jsp" class="active">About Us</a></li>
+            <li><a href="${pageContext.request.contextPath}/webapp/contact-us.jsp" class="active">Contact us</a></li>
+            <li><a href="${pageContext.request.contextPath}/webapp/about-us.jsp">About Us</a></li>
         </ul>
     </nav>
     <c:if test="${empty sessionScope.username}">
@@ -313,21 +357,52 @@
 </header>
 
 <div class="container">
-    <section class="about-section">
-        <h1>About Us</h1>
-        <p>Welcome to MovieMagnet, where movies come to life! Our easy-to-use booking platform lets you secure your seats instantly, skipping the long queues. Enjoy the latest blockbusters, exclusive screenings, and a top-tier cinematic experience with comfortable seating, stunning visuals, and immersive sound. At MovieMagnet, we are passionate about bringing the magic of cinema to every viewer, ensuring every visit is unforgettable.</p>
-        <p>Our mission is to provide a seamless and enjoyable movie-going experience, leveraging cutting-edge technology and a customer-first approach. We collaborate with top theaters and studios to bring you the best in entertainment, from Hollywood hits to local masterpieces.</p>
-        <div class="mission-vision">
-            <div class="mission">
-                <h3>Our Mission</h3>
-                <p>To revolutionize the movie-going experience by offering a hassle-free booking process, diverse film selections, and exceptional service, making cinema accessible and enjoyable for everyone.</p>
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for support, inquiries, or feedback. We're here to help you enjoy the ultimate movie experience!</p>
+
+        <div class="contact-info">
+            <div class="info-card">
+                <i class="fa fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+1-800-MOVIE-MAG (1-800-668-4362)</p>
             </div>
-            <div class="vision">
-                <h3>Our Vision</h3>
-                <p>To be the leading global platform for movie enthusiasts, setting the standard for innovation, comfort, and cinematic excellence by <span class="highlight">2025</span> and beyond.</p>
+            <div class="info-card">
+                <i class="fa fa-envelope"></i>
+                <h3>Email</h3>
+                <p>support@moviemagnet.com</p>
+            </div>
+            <div class="info-card">
+                <i class="fa fa-map-marker"></i>
+                <h3>Address</h3>
+                <p>123 Cinema Lane, Hollywood, CA 90028, USA</p>
             </div>
         </div>
-        <a href="${pageContext.request.contextPath}/publicMovieList" class="cta-button"><i class="fa-solid fa-ticket"></i> Explore Movies Now</a>
+
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-placeholder">
+                [Map Placeholder - Integrate Google Maps API here]
+            </div>
+        </div>
     </section>
 </div>
 
@@ -356,7 +431,5 @@
                 modal.style.display = 'none';
             }
         });
-
-        // Reuse the tab functionality from index.jsp if needed, but it's not required here
     });
 </script>

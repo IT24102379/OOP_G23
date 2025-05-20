@@ -698,10 +698,10 @@
     </div>
     <nav>
         <ul>
-            <li><a href="${pageContext.request.contextPath}/index.jsp" class="active">Home</a></li>
+            <li><a href="${pageContext.request.contextPath}/webapp/index.jsp" class="active">Home</a></li>
             <li><a href="${pageContext.request.contextPath}/publicMovieList">Movies</a></li>
-            <li><a href="${pageContext.request.contextPath}/contact-us.jsp">Contact us</a></li>
-            <li><a href="${pageContext.request.contextPath}/about-us.jsp">About Us</a></li>
+            <li><a href="${pageContext.request.contextPath}/webapp/contact-us.jsp">Contact us</a></li>
+            <li><a href="${pageContext.request.contextPath}/webapp/about-us.jsp">About Us</a></li>
         </ul>
     </nav>
     <c:if test="${empty sessionScope.username}">
@@ -732,7 +732,7 @@
         <div class="movie-carousel">
             <div class="movie-container">
                 <div class="movie-card">
-                    <img src="${pageContext.request.contextPath}/img/Card_1.jpg" alt="Movie 1">
+                    <img src="${pageContext.request.contextPath}/webapp/img/Card_1.jpg" alt="Movie 1">
                     <div class="movie-info">
                         <h3>MOVIE TITLE 1</h3>
                         <p>Genre: Action</p>
@@ -743,7 +743,7 @@
                     </div>
                 </div>
                 <div class="movie-card">
-                    <img src="${pageContext.request.contextPath}/img/Card_2.jpg" alt="Movie 2">
+                    <img src="${pageContext.request.contextPath}/webapp/img/Card_2.jpg" alt="Movie 2">
                     <div class="movie-info">
                         <h3>MOVIE TITLE 2</h3>
                         <p>Genre: Drama</p>
@@ -754,7 +754,7 @@
                     </div>
                 </div>
                 <div class="movie-card">
-                    <img src="${pageContext.request.contextPath}/img/Card_3.jpg" alt="Movie 3">
+                    <img src="${pageContext.request.contextPath}/webapp/img/Card_3.jpg" alt="Movie 3">
                     <div class="movie-info">
                         <h3>MOVIE TITLE 3</h3>
                         <p>Genre: Sci-Fi</p>
@@ -765,7 +765,7 @@
                     </div>
                 </div>
                 <div class="movie-card">
-                    <img src="${pageContext.request.contextPath}/img/Card_1.jpg" alt="Movie 1">
+                    <img src="${pageContext.request.contextPath}/webapp/img/Card_1.jpg" alt="Movie 1">
                     <div class="movie-info">
                         <h3>MOVIE TITLE 1</h3>
                         <p>Genre: Action</p>
@@ -776,7 +776,7 @@
                     </div>
                 </div>
                 <div class="movie-card">
-                    <img src="${pageContext.request.contextPath}/img/Card_2.jpg" alt="Movie 2">
+                    <img src="${pageContext.request.contextPath}/webapp/img/Card_2.jpg" alt="Movie 2">
                     <div class="movie-info">
                         <h3>MOVIE TITLE 2</h3>
                         <p>Genre: Drama</p>
@@ -787,7 +787,7 @@
                     </div>
                 </div>
                 <div class="movie-card">
-                    <img src="${pageContext.request.contextPath}/img/Card_3.jpg" alt="Movie 3">
+                    <img src="${pageContext.request.contextPath}/webapp/img/Card_3.jpg" alt="Movie 3">
                     <div class="movie-info">
                         <h3>MOVIE TITLE 3</h3>
                         <p>Genre: Sci-Fi</p>
@@ -849,10 +849,10 @@
         </div>
         <div class="footer-section links">
             <h3>Quick Links</h3>
-            <p><a href="${pageContext.request.contextPath}/index.jsp">Home</a></p>
+            <p><a href="${pageContext.request.contextPath}/webapp/index.jsp">Home</a></p>
             <p><a href="${pageContext.request.contextPath}/publicMovieList">Movies</a></p>
-            <p><a href="${pageContext.request.contextPath}/contact-us.jsp">Contact Us</a></p>
-            <p><a href="${pageContext.request.contextPath}/about-us.jsp">About Us</a></p>
+            <p><a href="${pageContext.request.contextPath}/webapp/contact-us.jsp">Contact Us</a></p>
+            <p><a href="${pageContext.request.contextPath}/webapp/about-us.jsp">About Us</a></p>
         </div>
         <div class="footer-section social">
             <h3>Follow Us</h3>

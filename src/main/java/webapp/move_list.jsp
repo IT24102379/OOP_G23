@@ -532,7 +532,7 @@
     </div>
     <nav>
         <ul>
-            <li><a href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
+            <li><a href="${pageContext.request.contextPath}/webapp/index.jsp">Home</a></li>
             <li><a href="${pageContext.request.contextPath}/publicMovieList" class="active">Movies</a></li>
             <li><a href="#">Contact us</a></li>
             <li><a href="#">About Us</a></li>
